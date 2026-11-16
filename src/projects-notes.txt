@@ -17,3 +17,13 @@ What it does: A tool that shows how long it will take to reach a savings goal. Y
 What I learned: How to read values from input fields, convert them from text to numbers with parseFloat, and do a calculation with them. I also learned how to use an event listener on a button and show the result on the page with JavaScript, and how to put a working tool live on a real website.
 My role: Solo project, built for my own business website.
 Challenges: Making sure the calculation worked correctly, for example rounding up to whole months and handling empty fields or a monthly saving of zero. I styled it in order to get an easy yet elegant overview.
+
+PROJECT 3
+Name: Bank Account ATM
+Screenshot: /images/bank-account.png
+GitHub: https://github.com/patrikhilton/Javascript-training.git
+Tech: JavaScript (objects, functions, switch, prompt/alert)
+What it does: A simple ATM that runs in the browser. You choose from a menu to see your balance, deposit money, withdraw money, see the account name, or exit. The menu keeps coming back until you choose to exit.
+What I learned: How to build an object with both properties and functions (methods), and how to use "this" inside an object. I also learned to separate the logic (the account object) from the user interface (the atm function), and to use a switch statement for a menu.
+My role: Solo project.
+Challenges: Stopping errors such as withdrawing more than the balance, or typing letters instead of a number. When I typed "abc", the balance became NaN, so I fixed it with isNaN() and the || operator. I also added the atm() menu after feedback from my teacher.
