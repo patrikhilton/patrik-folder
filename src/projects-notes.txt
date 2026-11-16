@@ -7,3 +7,13 @@ What it does: A typing game where a random word appears and you type it before t
 What I learned: How to change a web page with JavaScript (the DOM), how to react to typing with an event listener, and how to make a countdown with setInterval and stop it with clearInterval.
 My role: Solo project, built on the teacher's HTML and CSS starter code.
 Challenges: Getting the timer to stop at zero.
+
+PROJECT 2
+Name: Savings Goal Planner
+Screenshot: /images/savings-planner.png
+GitHub: https://hitapstudio.se/tools/savings-planner/
+Tech: HTML, CSS, JavaScript (DOM)
+What it does: A tool that shows how long it will take to reach a savings goal. You enter what you're saving for, your goal amount, how much you've already saved, and how much you save each month. When you click "Plan my savings", it calculates the number of months left and shows the result on the page. It's live on my business website, Hitap Studio.
+What I learned: How to read values from input fields, convert them from text to numbers with parseFloat, and do a calculation with them. I also learned how to use an event listener on a button and show the result on the page with JavaScript, and how to put a working tool live on a real website.
+My role: Solo project, built for my own business website.
+Challenges: Making sure the calculation worked correctly, for example rounding up to whole months and handling empty fields or a monthly saving of zero. I styled it in order to get an easy yet elegant overview.
