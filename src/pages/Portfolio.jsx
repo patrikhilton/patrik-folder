@@ -22,6 +22,7 @@ function Portfolio() {
                             learned={project.learned}
                             role={project.role}
                             challenges={project.challenges}
+                            onClick={() => console.log(project.name)}
                         />
                     ))}
                 </section>

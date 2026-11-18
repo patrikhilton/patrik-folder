@@ -1,6 +1,6 @@
 function ProjectCard(props) {
   return (
-    <article className="project-card">
+    <article className="project-card" onClick={props.onClick}>
       <img className="project-card__image" src={props.screenshot} alt={props.name} />
       <div className="project-card__content">
         <h2 className="project-card__title">{props.name}</h2>
