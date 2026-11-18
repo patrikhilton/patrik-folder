@@ -4,10 +4,17 @@ import projects from '../data/projects'
 
 function Portfolio() {
     const [showProjects, setShowProjects] = useState(false)
+    const [selectedProject, setSelectedProject] = useState(null)
     return (
         <section>
             <h1>My projects</h1>
-            <button className="preview-button" onClick={() => setShowProjects(true)}>Show projects</button>
+            <button className="preview-button" onClick={() => setShowProjects(prev => !prev)}>
+                {showProjects ? "Hide projects" : "Show projects"}
+            </button>
+
+            {selectedProject && <p>Selected: {selectedProject.name}</p>}
+
+
             {showProjects && (
                 <section className="projects">
 
@@ -22,7 +29,7 @@ function Portfolio() {
                             learned={project.learned}
                             role={project.role}
                             challenges={project.challenges}
-                            onClick={() => console.log(project.name)}
+                            onClick={() => setSelectedProject(project)}
                         />
                     ))}
                 </section>
