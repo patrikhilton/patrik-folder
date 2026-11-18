@@ -6,7 +6,7 @@ function Portfolio() {
     return (
         <section>
             <h1>My projects</h1>
-            <button onClick={() => setShowProjects(true)}>Show projects</button>
+            <button className="preview-button" onClick={() => setShowProjects(true)}>Show projects</button>
             {showProjects && (
                 <section className="projects">
 

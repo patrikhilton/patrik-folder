@@ -59,3 +59,35 @@ main {
   text-decoration: none;
   border-radius: 6px;
 }
+
+.navbar {
+  display: flex;
+  gap: 24px;
+  padding: 16px 0;
+  margin-bottom: 32px;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #6a3cff;
+}
+
+.preview-button {
+  padding: 12px 20px;
+  background-color: #6a3cff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.preview-button:hover {
+  background-color: #5228e0;
+}
