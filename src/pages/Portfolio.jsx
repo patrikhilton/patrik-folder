@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import ProjectCard from '../components/ProjectCard'
 import projects from '../data/projects'
+import Popup from '../components/Popup'
 
 function Portfolio() {
     const [showProjects, setShowProjects] = useState(false)
@@ -12,7 +13,19 @@ function Portfolio() {
                 {showProjects ? "Hide projects" : "Show projects"}
             </button>
 
-            {selectedProject && <p>Selected: {selectedProject.name}</p>}
+            {selectedProject && (
+  <Popup
+    name={selectedProject.name}
+    screenshot={selectedProject.screenshot}
+    github={selectedProject.github}
+    tech={selectedProject.tech}
+    whatItDoes={selectedProject.whatItDoes}
+    learned={selectedProject.learned}
+    role={selectedProject.role}
+    challenges={selectedProject.challenges}
+    onClose={() => setSelectedProject(null)}
+  />
+)}
 
 
             {showProjects && (
