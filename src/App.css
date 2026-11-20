@@ -91,3 +91,60 @@ main {
 .preview-button:hover {
   background-color: #5228e0;
 }
+
+/* The dark background covering the whole page */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  z-index: 1000;
+}
+
+/* The white box in the middle */
+.popup {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+/* The ✕ button in the top-right corner */
+.popup__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.popup__image {
+  width: 100%;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.popup__tech {
+  color: #6a3cff;
+  font-weight: bold;
+}
+
+.popup__link {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 16px;
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
