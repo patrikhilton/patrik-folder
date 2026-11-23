@@ -4,7 +4,11 @@ function ProjectCard(props) {
       <img className="project-card__image" src={props.screenshot} alt={props.name} />
       <div className="project-card__content">
         <h2 className="project-card__title">{props.name}</h2>
-        <p className="project-card__tech">{props.tech}</p>
+        <div className="tags">
+  {props.tags.map((tag) => (
+    <span className="tag" key={tag}>{tag}</span>
+  ))}
+</div>
 
         <h3>What it does</h3>
         <p>{props.whatItDoes}</p>

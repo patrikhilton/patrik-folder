@@ -6,7 +6,11 @@ function Popup(props) {
 
         <img className="popup__image" src={props.screenshot} alt={props.name} />
         <h2>{props.name}</h2>
-        <p className="popup__tech">{props.tech}</p>
+        <div className="tags">
+  {props.tags.map((tag) => (
+    <span className="tag" key={tag}>{tag}</span>
+  ))}
+</div>
 
         <h3>What it does</h3>
         <p>{props.whatItDoes}</p>

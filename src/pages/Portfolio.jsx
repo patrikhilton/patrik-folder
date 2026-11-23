@@ -33,7 +33,7 @@ function Portfolio() {
                     name={selectedProject.name}
                     screenshot={selectedProject.screenshot}
                     github={selectedProject.github}
-                    tech={selectedProject.tech}
+                    tags={selectedProject.tags}
                     whatItDoes={selectedProject.whatItDoes}
                     learned={selectedProject.learned}
                     role={selectedProject.role}
@@ -52,7 +52,7 @@ function Portfolio() {
                             name={project.name}
                             screenshot={project.screenshot}
                             github={project.github}
-                            tech={project.tech}
+                            tags={project.tags}
                             whatItDoes={project.whatItDoes}
                             learned={project.learned}
                             role={project.role}
