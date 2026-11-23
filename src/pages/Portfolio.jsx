@@ -10,9 +10,8 @@ function Portfolio() {
 
     const filteredProjects = projects.filter(project =>
         project.name.toLowerCase().includes(search.toLowerCase()) ||
-        project.tech.toLowerCase().includes(search.toLowerCase())
-    )
-
+          project.tags.some((tag) => tag.toLowerCase().includes(search.toLowerCase()))
+)
     return (
         <section>
             <h1>My projects</h1>
