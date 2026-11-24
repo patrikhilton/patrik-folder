@@ -43,8 +43,11 @@ function Portfolio() {
 
 
             {showProjects && (
-                <section className="projects">
-
+  <>
+    {filteredProjects.length === 0 && (
+      <p className="no-results">No projects found for "{search}".</p>
+    )}
+    <section className="projects">
                     {filteredProjects.map((project) => (
                         <ProjectCard
                             key={project.name}
@@ -60,6 +63,7 @@ function Portfolio() {
                         />
                     ))}
                 </section>
+                </> 
             )}
         </section>
     )
